@@ -7,20 +7,21 @@ palindrom(word);
 function palindrom(parola) {
     /*     arrayParola=parola.split("");
      */
-    let arrayParola = [];
+/*     let arrayParola = [];
     for (i = 0; i < word.length; i++) {
         arrayParola[i] = parola[i];
     }
-    console.table(arrayParola);
+    console.table(arrayParola); */
     let a = 0;
-    let q = arrayParola.length - 1;
-    for (let i = 0; i < arrayParola.length; i++) {
-        if (arrayParola[i] == arrayParola[q - i]) {
+    let q = parola.length - 1;
+    for (let i = 0; i < parola.length; i++) {
+        parola[i];
+        if (parola[i] == parola[q - i]) {
             a++;
             console.log(a)
         }
     }
-    if (a < arrayParola.length) {
+    if (a < parola.length) {
         console.log('non è palindroma');
     }
     else {
