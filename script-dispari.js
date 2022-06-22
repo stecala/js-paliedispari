@@ -7,7 +7,7 @@ Dichiariamo chi ha vinto. */
 
 const userChoice=prompt('scegli pari o dispari');
 const userNumber=parseInt(prompt('inserisci un numero da 1 a 5'));
-const pcNumber=Math.floor(Math.random() * 5) + 1;
+const pcNumber=randomNumber(5,1);
 console.log('questo è il numero del pc '+pcNumber);
 let sumNumber=userNumber+pcNumber;
 
@@ -23,7 +23,10 @@ if((userChoice==='pari') || (userChoice==='dispari')){
 } 
 
 
-
+function randomNumber(max, min){
+    number=Math.floor(Math.random() * max) + min;
+    return number;
+}
 
 function OddEven(num, choice){
     let result=num % 2;
