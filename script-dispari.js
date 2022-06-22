@@ -31,7 +31,7 @@ function OddEven(num, choice){
     if((result===0)&&(choice==='pari')){
         console.log('hai vinto');
     }
-    else if((!result===0) && (choice==='dispari')){
+    else if((result===1) && (choice==='dispari')){
         console.log('hai vinto');
     }
     else{
